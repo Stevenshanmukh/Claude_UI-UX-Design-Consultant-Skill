@@ -1,0 +1,161 @@
+{
+  "skill_name": "ui-ux-design-consultant",
+  "description": "Test cases for the UI/UX Design Consultant skill - analyzing and redesigning existing websites",
+  "evals": [
+    {
+      "id": 1,
+      "name": "saas-landing-page-react",
+      "prompt": "I've got this Next.js SaaS landing page that looks pretty amateur. It's a project management tool called 'TaskFlow'. The main issues I see are: random spacing everywhere, like sometimes buttons have 8px padding and sometimes 24px for no reason. The colors are all over the place - we've got like 5 different shades of blue that don't match. Typography is a mess too, I think we're using 12 different font sizes. Can you audit this and help me make it look professional? The code is in /src with components in /src/components and the main page in /src/app/page.tsx. We're using Tailwind CSS.",
+      "expected_output": {
+        "phases_executed": ["Phase 0 - Environment Detection", "Phase 1 - Discovery", "Phase 2 - Scoring Audit"],
+        "must_include": [
+          "Stack detection identifying Next.js and Tailwind",
+          "Discovery questions about product type, audience, goals",
+          "12-category scorecard with scores and justifications",
+          "Top 3 strengths identified",
+          "Top 5 issues ranked by severity",
+          "Quick wins suggestions",
+          "Audit script output data referenced"
+        ],
+        "format": "Structured audit report following the template"
+      },
+      "files": [],
+      "tags": ["audit", "react", "nextjs", "tailwind", "landing-page"]
+    },
+    {
+      "id": 2,
+      "name": "portfolio-html-redesign",
+      "prompt": "Hey, I have this portfolio website for my design work that I built a few years ago with plain HTML/CSS. It's pretty dated now - uses tables for layout in some places (I know, I know), has inconsistent fonts, and the colors are giving 2015 vibes. The project is at ./portfolio with index.html and a css/ folder. I want it to look modern and professional, something that would impress potential clients. Don't hold back on the critique. After you audit it, I want you to actually fix it - do the full redesign. I like clean, minimal aesthetics but nothing too boring.",
+      "expected_output": {
+        "phases_executed": ["Phase 0", "Phase 1", "Phase 2", "Phase 3", "Phase 4", "Phase 5", "Phase 6"],
+        "must_include": [
+          "Detection of plain HTML/CSS stack",
+          "Full 12-category audit with specific critiques",
+          "Design direction selection (likely 'Clean Minimal' based on stated preference)",
+          "Approval gate before execution",
+          "Actual code changes made to HTML and CSS files",
+          "Design tokens established (CSS variables)",
+          "Changelog documenting all changes"
+        ],
+        "format": "Complete workflow from audit through execution with changelog"
+      },
+      "files": [],
+      "tags": ["full-workflow", "html", "css", "portfolio", "redesign"]
+    },
+    {
+      "id": 3,
+      "name": "vue-dashboard-spacing-chaos",
+      "prompt": "We have a Vue 3 analytics dashboard built with Nuxt and it's got serious spacing inconsistency issues. Every component seems to have different padding - cards have random margins, the sidebar spacing doesn't match the main content, and the data tables look cramped in some places and way too airy in others. We're using a mix of inline styles and some CSS modules. I counted at least 30 different spacing values in the codebase. Can you run an audit focusing especially on the spacing/rhythm category? I need hard data on how bad it actually is and a plan to fix it by establishing a proper spacing system.",
+      "expected_output": {
+        "phases_executed": ["Phase 0", "Phase 1", "Phase 2", "Phase 3"],
+        "must_include": [
+          "Vue/Nuxt stack detection",
+          "Spacing audit script output showing 30+ unique values",
+          "Spacing & Rhythm score with specific justification",
+          "Detailed spacing inconsistency analysis",
+          "Recommendation for base-8 spacing system",
+          "Improvement plan with Tier 1 foundations (spacing system establishment)",
+          "Vue-specific guidance for applying the spacing system"
+        ],
+        "format": "Audit with deep spacing analysis and remediation plan"
+      },
+      "files": [],
+      "tags": ["audit", "vue", "nuxt", "dashboard", "spacing"]
+    },
+    {
+      "id": 4,
+      "name": "tailwind-component-library",
+      "prompt": "I'm working on a Tailwind-based component library for my startup. We've got buttons, cards, forms, modals - all the basics. Problem is, they were built by different developers at different times and nothing is consistent. Button sizes don't match input heights, hover states vary wildly, the focus rings are different colors, and our 'primary' color is defined 4 different ways across components. We're using React with TypeScript. I need you to audit the component design specifically, then help me establish proper design tokens in our tailwind.config.ts and make all components consistent. Work in batch mode once I approve the plan.",
+      "expected_output": {
+        "phases_executed": ["Phase 0", "Phase 1", "Phase 2", "Phase 3", "Phase 4", "Phase 5", "Phase 6"],
+        "must_include": [
+          "React/Tailwind detection with TypeScript noted",
+          "Component Design category scored with specific inconsistencies listed",
+          "Color audit showing duplicate definitions",
+          "Tailwind config audit",
+          "Design tokens plan in tailwind.config.ts format",
+          "Batch mode execution with multiple components updated",
+          "Consistent button/input sizing established",
+          "Unified hover/focus states",
+          "Comprehensive changelog"
+        ],
+        "format": "Component library harmonization with batch execution"
+      },
+      "files": [],
+      "tags": ["full-workflow", "react", "tailwind", "component-library", "batch-mode"]
+    },
+    {
+      "id": 5,
+      "name": "svelte-ecommerce-audit-only",
+      "prompt": "I need a design audit of our SvelteKit e-commerce site. We're using Tailwind and some custom SCSS. I don't want you to make any changes yet - just give me a thorough analysis of what's wrong and what needs to be fixed. Focus on the checkout flow pages especially. The site sells handmade jewelry so the aesthetic should feel premium and trustworthy. Give me the full 12-category scorecard with honest scores and specific examples of what's broken. I'll decide later if I want you to fix things.",
+      "expected_output": {
+        "phases_executed": ["Phase 0 - Environment Detection", "Phase 1 - Discovery", "Phase 2 - Scoring Audit"],
+        "must_include": [
+          "SvelteKit detection with Tailwind and SCSS noted",
+          "Discovery questions about e-commerce context and checkout priorities",
+          "Full 12-category scorecard with honest scores",
+          "Specific examples from checkout flow pages",
+          "CTA & Conversion category emphasized given e-commerce context",
+          "Trust signals evaluation (premium aesthetic requirements)",
+          "Top 5 issues with severity rankings",
+          "Quick wins list",
+          "NO code changes made",
+          "Clear offer to proceed to Phase 3 if user wants improvement plan"
+        ],
+        "format": "Comprehensive audit report without execution"
+      },
+      "files": [],
+      "tags": ["audit-only", "svelte", "sveltekit", "tailwind", "scss", "ecommerce"]
+    }
+  ],
+  "assertions": [
+    {
+      "id": "stack-detection",
+      "description": "Correctly identifies the framework and styling approach",
+      "applies_to": ["all"],
+      "check": "Phase 0 output matches the actual stack described in the prompt"
+    },
+    {
+      "id": "discovery-questions",
+      "description": "Asks appropriate discovery questions before auditing",
+      "applies_to": ["all"],
+      "check": "At least 3 Tier 1 questions asked, adapted to context"
+    },
+    {
+      "id": "scorecard-complete",
+      "description": "Produces complete 12-category scorecard",
+      "applies_to": ["all"],
+      "check": "All 12 categories scored 1-10 with justifications"
+    },
+    {
+      "id": "uses-audit-scripts",
+      "description": "References automated audit script data",
+      "applies_to": ["all"],
+      "check": "Mentions specific data points from audit scripts (spacing values, color counts, etc.)"
+    },
+    {
+      "id": "approval-gate",
+      "description": "Requests explicit approval before code changes",
+      "applies_to": [2, 4],
+      "check": "Phase 4 approval gate executed before any file modifications"
+    },
+    {
+      "id": "respects-stack",
+      "description": "Makes changes using existing tools, no new dependencies",
+      "applies_to": [2, 4],
+      "check": "Code changes use the existing styling approach (Tailwind classes, CSS, etc.)"
+    },
+    {
+      "id": "foundations-first",
+      "description": "Establishes design tokens before component changes",
+      "applies_to": [2, 4],
+      "check": "Token file (tailwind.config or CSS variables) modified before component files"
+    },
+    {
+      "id": "changelog-generated",
+      "description": "Produces structured changelog after execution",
+      "applies_to": [2, 4],
+      "check": "Phase 6 changelog includes score improvements, changes by section, files modified"
+    }
+  ]
+}
